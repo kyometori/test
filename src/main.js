@@ -38,6 +38,9 @@ export function Content() {
       <Route path='/test/server'>
         server
       </Route>
+      <Route path='/test'>
+      (´・ω・`)
+      </Route>
     </Switch>
   )
 }
