@@ -6,7 +6,7 @@ import { Nav, Content } from './main.js';
 function HeaderLink(props) {
   return (
     <span className={`header-link ${props.classes?.join(' ') ?? ''}`}>
-      <Link to={props.url}>
+      <Link to={`/test${props.url}`}>
         {props.text}
       </Link>
     </span>
@@ -24,7 +24,7 @@ function Switch() {
 function Wordmark() {
   return (
     <div id='wordmark' className='pc-only'>
-      <Link to="/"><img src={wordmark} /></Link>
+      <Link to="/test"><img src={wordmark} /></Link>
     </div>
   );
 }

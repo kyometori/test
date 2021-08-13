@@ -4,7 +4,7 @@ import annIcon from './img/nav-icons/announcement.png';
 
 function NavLink(props) {
   return (
-    <Link to={props.url}>
+    <Link to={`/test${props.url}`}>
       <div className='nav-link'>
         <div className='nav-link-icon'>
           <img src={props.icon} />
@@ -20,7 +20,7 @@ function NavLink(props) {
 export function Nav() {
   return (
     <div id="nav"  className='pc-only'>
-      <NavLink icon={mpIcon} url='/' text='首頁' />
+      <NavLink icon={mpIcon} url='' text='首頁' />
       <NavLink icon={annIcon} url='/announcement' text='最新公告' />
     </div>
   )
@@ -29,13 +29,13 @@ export function Nav() {
 export function Content() {
   return (
     <Switch>
-      <Route exact path='/'>
+      <Route exact path='/test'>
         welcome
       </Route>
-      <Route path='/invite'>
+      <Route path='/test/invite'>
         invite
       </Route>
-      <Route path='/server'>
+      <Route path='/test/server'>
         server
       </Route>
     </Switch>
