@@ -99,7 +99,7 @@ header {
   position: relative;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
-  animation-duration: 500ms;
+  animation-duration: 350ms;
 }
 
 #nav.open {
