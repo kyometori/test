@@ -95,7 +95,19 @@ header {
   width: 17vw;
   height: 100vh;
   border-right: 1px black solid;
+  overflow: hidden;
   position: relative;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-duration: 500ms;
+}
+
+#nav.open {
+  animation-name: open;
+}
+
+#nav.collapsed {
+  animation-name: collapsed;
 }
 
 .nav-link {
@@ -135,6 +147,16 @@ header {
   margin:0px;
   padding:0px;
   overflow: scroll;
+}
+
+@keyframes collapsed {
+  0% { width: 17vw }
+  100% { width: 0vw; display: none; }
+}
+
+@keyframes open {
+  0% { width: 0vw; display: block; }
+  100% { width: 17vw; }
 }
 
 @media (max-width: 979px) {
