@@ -89,15 +89,16 @@ header {
   margin-bottom: 50px;
   display:flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #nav {
-  width: 17vw;
+  width: 20vw;
   height: 100vh;
   border-right: 1px black solid;
   overflow: hidden;
   position: relative;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-duration: 350ms;
 }
@@ -144,19 +145,19 @@ header {
 #content {
   height: 100vh;
   width: 100%;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0 30px;
   overflow: scroll;
 }
 
 @keyframes collapsed {
-  0% { width: 17vw }
+  0% { width: 20vw }
   100% { width: 0vw; display: none; }
 }
 
 @keyframes open {
   0% { width: 0vw; display: block; }
-  100% { width: 17vw; }
+  100% { width: 20vw; }
 }
 
 @media (max-width: 979px) {

@@ -21,7 +21,7 @@ export default function Nav() {
   return (
     <div id="nav" className='pc-only'>
       <NavLink icon={mpIcon} url='/' text='首頁' />
-      <NavLink icon={annIcon} url='/announcement' text='最新公告' />
+      <NavLink icon={annIcon} url='/announcement' text='最新公告'/>
     </div>
   )
 }
