@@ -8,7 +8,7 @@ export default function Mainpage() {
       <Description />
       <Basic />
       <Games />
-      當然，HiZollo 的功能可不僅於此，快<a href="/invite" target="_blank">點擊此處</a>來邀請 HiZollo 到你的伺服器中吧！
+      當然，HiZollo 的功能可不僅於此，快<Link to="/invite">點擊此處</Link>來邀請 HiZollo 到你的伺服器中吧！
       <Partner />
       <Chat />
       <Update />
