@@ -4,6 +4,8 @@ import annIcon from './img/nav-icons/announcement.png';
 import cmdIcon from './img/nav-icons/command.png';
 import tutorialIcon from './img/nav-icons/tutorial.png';
 import changelogIcon from './img/nav-icons/changelog.png';
+import devIcon from './img/nav-icons/dev.png';
+import tosIcon from './img/nav-icons/tos.png';
 
 function NavLink(props) {
   return (
@@ -24,10 +26,12 @@ export default function Nav() {
   return (
     <div id="nav" className='pc-only'>
       <NavLink icon={mpIcon} url='/' text='首頁' />
-      <NavLink icon={annIcon} url='/announcement' text='最新公告'/>
-      <NavLink icon={cmdIcon} url='/commands' text='指令列表'/>
-      <NavLink icon={tutorialIcon} url='/tutorials' text='使用教學'/>
-      <NavLink icon={changelogIcon} url='/changelog' text='更新日誌'/>
+      <NavLink icon={annIcon} url='/announcement' text='最新公告' />
+      <NavLink icon={cmdIcon} url='/commands' text='指令列表' />
+      <NavLink icon={tutorialIcon} url='/tutorials' text='使用教學' />
+      <NavLink icon={changelogIcon} url='/changelog' text='更新日誌' />
+      <NavLink icon={devIcon} url='/dev' text='開發團隊' />
+      <NavLink icon={tosIcon} url='/tos' text='用戶條款' />
     </div>
   )
 }

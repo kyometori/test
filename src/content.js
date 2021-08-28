@@ -21,11 +21,11 @@ export default function Content(props) {
         <Route exact path='/source'>
           <Redirect url='https://github.com/kyometori/test' />
         </Route>
-        <Route exact path='/:thing' render={props => props.match.params.thing} />
+        <Route path='/:thing' render={props => props.match.params.thing} />
         <Route path='/'>
         (´・ω・`)
         </Route>
       </Switch>
     </div>
-  )
+  );
 }
