@@ -36,6 +36,10 @@ function InfoTable () {
           aliases = {['ann']}
           description = "閱讀官方公告"
         />
+        <CommandInfo
+          cmd="botinfo"
+          description = "查看機器人資訊"
+        />
       </table>
     </>
   )
