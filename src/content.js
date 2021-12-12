@@ -2,6 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import Redirect from './redirects.js';
 import Mainpage from './pages/mainpage/index.js';
 import Commands from './pages/commands/index.js';
+import Changelog from './pages/changelog/index.js';
 
 export default function Content(props) {
   return (
@@ -12,6 +13,9 @@ export default function Content(props) {
         </Route>
         <Route path='/commands'>
           <Commands />
+        </Route>
+        <Route exact path='/changelog'>
+          <Changelog />
         </Route>
         <Route exact path='/dst'>
           <Redirect url='https://discordservers.tw/bots/584677291318312963' />
